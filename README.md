@@ -95,7 +95,7 @@ Make sure the following are installed:
 
 ## 1. Clone the Repository
 
-    git clone <YOUR_GITHUB_REPOSITORY_URL>
+    git clone <GITHUB_REPOSITORY_URL>
     cd rulebook-ai
 
 ---
