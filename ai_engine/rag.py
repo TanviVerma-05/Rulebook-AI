@@ -1,5 +1,5 @@
-import os
 import sys
+import os
 import json
 from pathlib import Path
 from unittest import result
@@ -9,6 +9,9 @@ from dotenv import load_dotenv
 from sentence_transformers import SentenceTransformer
 from google import genai
 from google.genai import types
+
+sys.stdout.reconfigure(encoding="utf-8")
+sys.stderr.reconfigure(encoding="utf-8")
 
 
 # ==================================================
@@ -28,9 +31,10 @@ METADATA_FILE = DATA_DIR / "metadata.json"
 # ==================================================
 
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
-GENERATION_MODEL = "gemini-2.5-flash"
+GENERATION_MODEL = "gemini-3.5-flash-lite"
 
 TOP_K = 6
+MIN_RELEVANCE_SCORE = 0.50
 
 
 # ==================================================
@@ -69,7 +73,7 @@ client = genai.Client(
 if not EMBEDDINGS_FILE.exists():
     raise FileNotFoundError(
         "embeddings.npy not found. Run embeddings.py first."
-)
+    )
 
 if not METADATA_FILE.exists():
     raise FileNotFoundError(
@@ -272,7 +276,6 @@ def generate_answer(question, results):
 # ==================================================
 
 def ask(question):
-
     question = question.strip()
 
     if not question:
@@ -283,17 +286,25 @@ def ask(question):
             "conflicts": []
         }
 
-    results = search(
-        question,
-        TOP_K
-    )
 
-    answer = generate_answer(
-        question,
-        results
-    )
+    results = search(question, TOP_K)
 
-    # Keep retrieval information for debugging/demo.
+    # If the best retrieved evidence is not relevant enough,
+    # refuse without calling the LLM.
+    if not results or results[0]["score"] < MIN_RELEVANCE_SCORE:
+        return {
+            "state": "NO_EVIDENCE",
+            "answer": (
+                "The rulebook does not provide enough evidence "
+                "to answer this question."
+            ),
+            "citations": [],
+            "conflicts": []
+        }
+
+    # Only use Gemini when relevant evidence exists.
+    answer = generate_answer(question, results)
+
     answer["retrieved"] = [
         {
             "chunk_id": r["chunk_id"],

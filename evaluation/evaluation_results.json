@@ -1,0 +1,183 @@
+{
+  "total_questions": 25,
+  "correctly_refused": 25,
+  "incorrect_responses": 0,
+  "refusal_accuracy_percent": 100.0,
+  "results": [
+    {
+      "id": 1,
+      "question": "What is the hostel mess menu for Monday?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 2,
+      "question": "Which brand of laptops does the university recommend for students?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 3,
+      "question": "What is the Wi-Fi password for the central library?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 4,
+      "question": "Which restaurant is closest to the university campus?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 5,
+      "question": "What time does the university gym open on Sunday?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 6,
+      "question": "Which programming language should first-year students learn?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 7,
+      "question": "What is the university's official placement package for computer science graduates?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 8,
+      "question": "Which bank operates the ATM inside the campus?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 9,
+      "question": "What is the monthly hostel electricity bill?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 10,
+      "question": "Which mobile network has the best coverage on campus?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 11,
+      "question": "What is the recommended laptop configuration for engineering students?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 12,
+      "question": "Does the university provide free transportation to the railway station?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 13,
+      "question": "What is the menu for the annual cultural festival dinner?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 14,
+      "question": "Which software should students install before joining the university?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 15,
+      "question": "What is the university's policy on cryptocurrency trading?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 16,
+      "question": "Which company will visit campus first for placements this year?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 17,
+      "question": "What is the average salary of graduates from the university?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 18,
+      "question": "Does the university provide free cloud storage to every student?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 19,
+      "question": "What is the official dress color for university sports teams?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 20,
+      "question": "Which programming editor is officially supported by the university?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 21,
+      "question": "What is the university's policy on using generative AI for assignments?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 22,
+      "question": "How many charging stations are available for electric vehicles on campus?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 23,
+      "question": "What is the student discount available at nearby bookstores?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 24,
+      "question": "Which cafeteria serves the cheapest lunch on campus?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    },
+    {
+      "id": 25,
+      "question": "What is the university's official recommendation for buying a smartphone?",
+      "expected_state": "NO_EVIDENCE",
+      "actual_state": "NO_EVIDENCE",
+      "correct": true
+    }
+  ]
+}
