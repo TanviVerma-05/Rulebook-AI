@@ -181,8 +181,20 @@ def generate_answer(question, results):
         3. Do NOT invent policies, dates, numbers, rules, or exceptions.
         4. If the evidence does not contain enough information
         to answer the question, return NO_EVIDENCE.
-        5. If two pieces of evidence give materially incompatible
-        answers to the same question, return CONTRADICTION.
+        5. CONTRADICTION RULE:
+        Mark the state as CONTRADICTION only when two supplied sources give
+        materially incompatible rules for the SAME situation and the conflict
+        cannot be explained by an exception, condition, category, or special case.
+
+        Do NOT treat a conditional exception as a contradiction to a general rule.
+        For example, if one source says the normal requirement is 75% and another
+        says students with an approved medical absence may qualify at 60% under
+        specific conditions, these are compatible because the 60% rule is a
+        conditional exception.
+
+        However, if two sources give different unconditional deadlines,
+        limits, requirements, or values for the same situation, classify the
+        result as CONTRADICTION.
         6. If the evidence supports one clear answer, return ANSWER.
         7. Every factual claim in an ANSWER must have a citation.
         8. Citations must refer ONLY to the supplied evidence.
