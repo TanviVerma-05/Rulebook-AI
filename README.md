@@ -4,7 +4,7 @@ A grounded Retrieval-Augmented Generation (RAG) system for answering university 
 
 Rulebook AI is designed to **answer only from the provided rulebook corpus**, refuse questions that are not supported by the corpus, and explicitly surface contradictory rules instead of silently choosing one.
 
-![Rulebook AI Demo](screenshots/rulebook-ai.png)
+![Rulebook AI Demo](Screenshot/rulebook-ai.png)
 
 --- 
 
